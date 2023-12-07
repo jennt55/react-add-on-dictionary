@@ -10,3 +10,9 @@ img {
   margin: 0 auto;
   display: block;
 }
+footer {
+  text-align: center;
+  display: block;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+}
