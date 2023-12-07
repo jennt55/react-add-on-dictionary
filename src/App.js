@@ -17,6 +17,16 @@ export default function App() {
         <main>
           <Dictionary />
         </main>
+        <footer>
+          <a
+            href="https://github.com/jennt55/react-add-on-dictionary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open source Code{" "}
+          </a>
+          by Jenn Taft
+        </footer>
       </div>
     </div>
   );
