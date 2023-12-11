@@ -1,3 +1,19 @@
 .searchBox {
   text-align: center;
 }
+.Dictionary section {
+  background-color: #bbe4e9;
+  border: 1px solid #79c2d0;
+  padding: 6px;
+  box-shadow: 3px 3px rgb(85, 133, 181, 0.4);
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
+  border-radius: 6px;
+}
+.Dictionary input {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #79c2d0;
+  font-size: 18px;
+  color: #00204a;
+}
