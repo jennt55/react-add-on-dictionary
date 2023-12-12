@@ -4,12 +4,11 @@ import axios from "axios";
 import Results from "./Results";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState("fir");
+  let [keyword, setKeyword] = useState("forest");
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
-    console.log(response.data);
     setResults(response.data);
   }
   function handleKeywordChange(event) {
@@ -35,6 +34,7 @@ export default function Dictionary() {
     return (
       <div className="Dictionary">
         <section>
+          <h1>Enter a word to find out the definition</h1>
           <form className="searchBox" onSubmit={handleSubmit}>
             <input
               className="searchInput"
