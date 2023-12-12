@@ -2,7 +2,7 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-  if (props.photos.length) {
+  if (props.photos) {
     return (
       <section className="Photos">
         <div className="row">
@@ -16,8 +16,8 @@ export default function Photos(props) {
                 >
                   <img
                     src={photos.src.landscape}
+                    alt="definition"
                     className="img-fluid"
-                    alt={photos.photographer}
                   />
                 </a>
               </div>
