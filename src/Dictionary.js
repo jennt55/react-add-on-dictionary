@@ -8,16 +8,16 @@ export default function Dictionary() {
   let [keyword, setKeyword] = useState("forest");
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
-  let [photos, setPhotos] = useState(" ");
+  let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
     setResults(response.data);
+    setLoaded(true);
   }
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
   function load() {
-    setLoaded(true);
     search();
   }
 
